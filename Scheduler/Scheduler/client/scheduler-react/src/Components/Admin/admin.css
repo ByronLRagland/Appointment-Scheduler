@@ -1,0 +1,89 @@
+
+
+table {
+    width: 100%;
+    text-align: center;
+  }
+
+  .presentForm {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  } 
+
+  /* #viewProfile {
+    margin: auto;
+  } */
+
+  .signUp {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .signIn {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .btn-primary{
+    background-color: rgb(13, 89, 240);
+    border-color: rgb(13, 89, 240);
+  }
+
+  .btn-primary:hover{
+    text-shadow: 1px 1px 2px #000000;
+  }
+
+  .btn-danger{
+    background-color: rgb(186, 25, 69);
+    border-color: rgb(186, 25, 69);
+  }
+
+  .btn-danger {
+    text-shadow: 1px 1px 2px #000000;
+  }
+
+  .btn-success-new{
+    color: white;
+    background-color: rgb(150, 125, 250);
+    border-color: rgb(150, 125, 250);
+  }
+
+  .btn-success-new:hover {
+    color: white;
+    background-color: rgb(150, 125, 250);
+    border-color: rgb(150, 125, 250);
+    text-shadow: 1px 1px 2px #000000;
+  }
+
+  /* .buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+  } */
+
+  .title-list-form{
+    text-align: center;
+  }
+ 
+  /* .buttonContainerLogin {
+    display: flex;
+    justify-content: space-between;
+
+  } */
+
+  #card-profile {
+    margin: auto;
+    width: 50%;
+    /* padding: 10px; */
+  }
+ 
+
+  .col {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  
+ 

@@ -1,0 +1,287 @@
+$colors: (
+
+    primary: #005DFF,
+    primary-light: lighten(#005DFF, 40%),
+    primary-dark: darken(#005DFF, 40%),
+    accent: #FFF6BB,
+    cancel: rgb(186,25,69),
+    custom-purple: rgb(150,125,250),
+    custom-blue: rgb(13,89,243)
+
+);
+
+
+// https://pixabay.com/vectors/calendar-date-month-day-week-1763587/
+//https://www.acuityscheduling.com/?utm_source=adwords&utm_medium=cpc&utm_campaign=generic&utm_content=client&utm_term=em-tcpa&gclid=Cj0KCQjwqoibBhDUARIsAH2OpWhhqj8n78Ylq5IXChggdDfKcq3RPKJIOh6osO_jymwRZnrFmQHWx50aAh6DEALw_wcB
+
+
+$padding: 15px;
+$borders: 15px;
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+}
+
+$desktop: 840px;
+
+@mixin desktop{
+
+    @media (min-width: #{$desktop}) {
+
+        @content;
+    }
+
+}
+
+.bg-custom-purple{
+    background-color: color(custom-purple) !important;
+}
+
+.bg-cancel {
+    background-color: color(cancel) !important;
+}
+
+.bg-custom-blue {
+    background-color: color(custom-blue) !important;
+}
+
+
+body, html {
+
+    height: 100%;
+
+}
+
+body {
+    //background-color: map-get($colors, primary);
+
+    #bg{
+
+        clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+        background-color: color(primary);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+
+        @include desktop {
+
+            clip-path: polygon(0 0, 75% 0, 55% 100%, 0% 100%);
+
+
+        }
+    }
+
+
+    // header a {
+    //     color: white;
+    //     text-decoration: none;
+    //     padding: $padding;
+    //     display: block;
+    //     text-transform: uppercase;
+    // }
+
+} 
+
+#secondary-title{
+    color: rgb(232,232,232);
+}
+
+
+main {
+
+    // #card2 {    
+    //     background: white;
+    //     // padding: 120px;
+    //     border-radius: $borders;
+    //     box-shadow: 0 10px 30px rgba(0,0,0, .2);
+    //     width: 80%;
+    //     margin: 1em;
+    //     // height: fit-content;
+    //     height: 60%;
+    //     // background-image: url(../../src/images/calendar-image2.png);
+    //     // background-repeat: no-repeat;
+    //     // background-size: contain;
+    //     img{
+    //         object-fit:cover;
+    //     }
+    
+    // }
+
+    @include desktop {
+
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: 
+        // "primary primary card"
+        // "primary primary card2"
+        // "primary primary card2";
+        "primary secondary";
+    
+    }
+
+    section#secondary #card {
+        background: white;
+        padding: 20px;
+        margin: 1em auto; //center
+        border-radius: $borders;
+        box-shadow: 0 10px 30px rgba(0,0,0, .2);
+        width: 80%;
+
+        @include desktop{
+    
+            height: fit-content;
+            align-self: center;
+            margin: 8em 1em 1em 1em;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0; padding: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                span {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background-color: color(primary-light);
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+
+                strong {
+
+                    display: inline-block;
+                    margin-left: max(40px);
+                    margin-top: 10px;
+                }
+
+            }
+        }
+
+    }
+
+
+    section#primary{
+
+        color: white;
+        padding: $padding;
+        text-align: center;
+
+        @include desktop {
+
+            grid-area: primary;
+            text-align: left;
+            margin: 4em 0 0 4em;
+        }
+
+        h1 {
+
+            font-size: 3em;
+            margin-top: 10px;
+            text-transform: uppercase;
+
+            @include desktop {
+
+               width: 30%;
+               font-size: 4em;
+               line-height: .9em;
+
+            }
+            
+        }
+
+
+        p {
+            font-size: 1.4em;
+        }
+
+        // #sign-up-button {
+
+        //     color: color(primary-dark);
+        //     border-radius: $borders;
+        //     text-decoration: none;
+        //     text-transform: uppercase;
+        //     font-weight: bold;
+        //     background-color: color(accent);
+        //     display: block;
+        //     text-align: center;
+        //     margin: 50px auto 0 auto;
+        //     padding: $padding;
+
+
+        //     @include desktop {
+
+        //         display: inline-block;
+        //         padding: $padding $padding*4;
+        //     }
+
+        //     &:hover {
+        //         transform: scale(1.1);
+        //       }
+        // }
+
+        .signbtn {
+                text-decoration: none; 
+                margin-top: 1em;
+                $btn-height: 75px;
+                $btn-width: 250px;
+          
+                overflow: hidden;
+                text-align: center;
+                cursor : pointer;
+                display: inline-block;
+                // font-family: "Raleway";
+                font-size: $btn-height/3;
+                
+                width : $btn-width;
+                height: $btn-height;
+                
+                color: white;
+                background-color: rgb(150, 125, 250);
+                box-shadow: 0 20px 20px rgba(0, 0, 0, 0.35);
+                text-shadow: 0 2.5px rgba(0, 0, 0, 0.25);
+                border-radius: 3px;
+              
+                transition : .6s;
+                
+                span {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  
+                  height: inherit;  
+                }
+                  
+                .light {
+                  position : relative;
+                  width : 50px;
+                  height: 2 * $btn-height;
+              
+                  background-color: rgba(255, 255, 255, 1);
+                  transform: skew(-20deg) translate(-$btn-width, -$btn-height);
+                }
+              
+                &:hover {
+                  transform: scale(1.1);
+              
+                  .light {
+                    background-color: rgba(255, 255, 255, 0.2);
+                    transform: skew(-20deg) translate($btn-width, -$btn-height);
+                    transition : .7s;
+                  }
+                }
+              
+        }
+
+
+    }
+
+
+
+
+
+} 

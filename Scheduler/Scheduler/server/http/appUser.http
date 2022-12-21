@@ -1,0 +1,47 @@
+@url = http://localhost:8080/api/appuser
+
+GET {{url}} HTTP/1.1
+
+###
+GET {{url}}/usertype/employee HTTP/1.1
+
+###
+GET {{url}}/2 HTTP/1.1
+
+###
+GET {{url}}/username/gregory@gg.com HTTP/1.1
+
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Adam1",
+    "lastName": "West1",
+    "bio": "big guy from a small town",
+    "imageUrl": "https://comicvine.gamespot.com/a/uploads/scale_small/6/66303/2242737-screen_shot_2012_03_14_at_11.48.47_am.png",
+    "phone": null,
+    "email": "something1@abc1111111",
+    "password": "sfdsafsfdfasf",
+    "userType": "employee"
+  }
+
+###
+PUT {{url}}/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "userId": 2, 
+    "firstName": "Update2 First",
+    "lastName": "Update2 Last",
+    "bio": "Some bio",
+    "imageUrl": "Some link",
+    "phone": "some phone",
+    "email": "Some email Update",
+    "password": "test password",
+    "userType": "admin"
+
+}
+
+###
+DELETE {{url}}/2 HTTP/1.1

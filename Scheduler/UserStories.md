@@ -1,0 +1,46 @@
+# User Stories:
+- As a customer, I want to create an account.
+- As a customer, I want to be able to login to my account.
+- As a customer, I want to view the available schedule for an employee, so I can decide what time I want an appointment.
+- As a customer, I want to pick an open time slot for an employee, so that I can have an appointment scheduled.
+- As a customer, I want to view all of my scheduled appointments.
+- As a customer, I want to edit my appointment time, so I can change the time or date.
+- As a customer, I want to cancel my appointment, so I do not occupy a time slot unnecessarily.
+- As a customer, I want to view available employees 
+- As a customer, I want to select a specific employee for an appointment. 
+- As a customer, I want to select a service for my appointment.
+- As an employee, I want to see what customers I have scheduled, so I can know who is coming.
+- As an employee, I want to see what times I have customers scheduled, so I can know what my schedule is.
+- As an admin, I want to be able to view all employee schedules (past or future), so that I have a record to keep track of.
+- As an admin, I want to be able to view all employees.
+- As an admin, I want to be able to edit appointments
+- As an admin, I want to be able to cancel appointments.
+- As an admin, I want to be able to add employees.
+- As an admin, I want to be able to remove employees.
+- As an admin, I want to be able to add  services. 
+- As an admin, I want to be able to remove services. 
+- As an admin, I want to be able to set prices for available services. 
+# **Customer**
+- The customer starts at the home page and has the option to login or sign up by clicking on the login button and navigates to the login page.
+- The home page contains general information about the business and a login button on the navbar.
+- On the login page if the customer clicks sign up they have to enter first name, last name, email/username, password, phone number.
+- Once the customer clicks submit, if there are any errors in the fields we will display specific error messages at the top of the form.
+- If there are no errors, redirect the customer to a success page that displays a success message and a link to the login page.
+- In order to log in, the customer will click the login button which will redirect the customer to the login page. The login page will present a form for email and password entries. The customer enters the information. If the customer presents bad credentials, a “bad credentials” message is displayed. Otherwise if credentials are valid, the customer will be redirected to the homepage
+- After a customer is logged in, they will be redirected to the homepage, The login button will be replaced by the logout button right next to their username. They will be able to see a “book appointment” button next to their username. Clicking on the logout button will allow the user to stay on the homepage but lose access to the book appointment button, and they will see the login button again. Also on the navbar, is a “your appointments” button. 
+- By clicking on the book appointment button, the customer will be redirected to the service page where they are able to see a list of employees with their pictures and services provided by that employee. The customer may click on an employee's picture to choose them for the service and be redirected to the employee’s schedule page.
+- On the employee schedule page. The client could see the empty appointments made by that employee listed out. Every list item would have a drop down so that the user may choose a specific service meant to be provided by that employee. On the furthest right of the list item, there is a book button to book that appointment. The client may also choose to go back to the view employee page to choose another employee. 
+- After the customer clicks on the book button. A success message appears. A new appointment will be added. And the user may view all of their booked appointments, by clicking on the “your appointments” button. The customer will be redirected to their appointments page. Where a list of appointments will be displayed (time, employee name, type service to be provided) 
+- The customer may delete an appointment by clicking on the delete button next to the appointment slip. 
+# **Employee**
+- Should a user login with an employee account, they will be redirected to the homepage. Their navbar will contain the “Create availability” button instead of a “Book appointment” button. By clicking on the create availability button, the employee will be redirected to the create availability page.
+- On the create availability page, the employee sees 2 entry boxes for start time and end time, and a submit button.
+- If an invalid time is entered, display an error message, make the employee do it again.
+- If a valid time is entered, a success message will be displayed. They stay on this page.
+- The employees have a “Your appointment” button on the navigation bar same as the client. Theirs will have empty appointment slips that don’t necessarily contain a client & service. 
+# **Admin**
+- Should the user login as an admin, they will be redirected to the homepage. The navbar will contain “view-update-delete employees”, “create employee”, “view/update/delete service”, “create service”.
+- Should the admin select “create employee” or “create service”, a form mimicking the respective tables for employee and service will be presented. The admin will fill out the form. If there are errors, they will be displayed at the top of the form. Otherwise, the admin will be redirected to the homepage.
+- Should the admin select “view-update-delete employees” or “view/update/delete service”, the admin will be redirected to a page that renders a list of all employees/services. The page will contain an edit and delete buttons beside each item in the list. 
+- If the admin selects one of the edit buttons, the admin will be redirected to a page that renders a form populated with the existing information of the selected employee/service and a submit and a cancel button. The admin can edit each field of the form. If admin clicks cancel, the admin will be redirected back to the page rendering the list. If the admin clicks submit and there are errors, the errors will be displayed on top of the form. Otherwise the admin will be redirected to the list page. 
+- If the admin selects one of the delete buttons, the admin will be asked to confirm/delete the action. If the admin confirms the deletion, the employee/service in the list is removed otherwise, nothing happens. 

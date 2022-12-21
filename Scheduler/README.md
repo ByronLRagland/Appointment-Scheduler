@@ -1,0 +1,166 @@
+
+# Scheduler Tasks
+# Controllers - 5.5 hours
+- [ ] AuthController - 1 hour
+- [x] GlobalErrorHandler- 30 mins
+- [x] EmployeeController - 1 hour
+- [x] CustomerController - 1 hour
+- [x] AppointmentController - 1 hour
+- [x] ServiceController - 1 hour
+# Data
+- [x] EmployeeJdbcRepositoryTemplate - 4.5 Hours
+- - [x] findAll() - (30mins)
+- - [x] findByID() - (30mins)
+- - [x] Add() - (30mins)
+- - [x] Delete() - (30mins)
+- - [x] Update() - (30mins)
+- - [x] Test methods - 2 hours
+- [x] CustomerJdbcRepositoryTemplate  - 4.5 hours
+- - [x] findAll() - (30mins)
+- - [x] findByID() - (30mins)
+- - [x] Add() - (30mins)
+- - [x] Delete() - (30mins)
+- - [x] Update() - (30mins)
+- - [x] Test methods - 2 hours
+- [x] AppointmentJdbcRepositoryTemplate - 4.5 Hours
+- - [x] findAll() - (30mins)
+- - [x] findByID() - (30mins)
+- - [x] Add() - (30mins)
+- - [x] Delete() - (30mins)
+- - [x] Update() - (30mins)
+- - [x] Test methods - 2 hours
+- [x] ServiceJdbcRepositoryTemplate - 4.5 Hours
+- - [x] findAll() - (30mins)
+- - [x] findByID() - (30mins)
+- - [x] Add() - (30mins)
+- - [x] Delete() - (30mins)
+- - [x] Update() - (30mins)
+- - [x] Test methods - 2 hours
+- [ ] AppUserJdbcRepositoryTemplate - 6 Hours * implement after api is confirmed to work
+- - [ ] Create
+- - [ ] Read
+- - [ ] Update
+- - [ ] Delete 
+## Mappers - 1 hour
+- [x] EmployeeMapper - 15 mins
+- [x] CustomerMapper - 15 mins
+- [x] AppointmentMapper - 15 mins
+- [x] ServiceMapper - 15 mins
+# Domain
+- [x] EmployeeService
+- - [x] findAll() - (30mins)
+- - [x] findByID() - (30mins)
+- - [x] Add() - (30mins)
+- - [x] Delete() - (30mins)
+- - [x] Update() - (30mins)
+- - [x] Test methods - 2 hours
+- [x] CustomerService
+- - [x] findAll() - (30mins)
+- - [x] findByID() - (30mins)
+- - [x] Add() - (30mins)
+- - [x] Delete() - (30mins)
+- - [x] Update() - (30mins)
+- - [x] Test methods - 2 hours
+- [x] AppointmentService
+- - [x] findAll() - (30mins)
+- - [x] findByID() - (30mins)
+- - [x] Add() - (30mins)
+- - [x] Delete() - (30mins)
+- - [x] Update() - (30mins)
+- - [x] Test methods - 2 hours
+- [x] ServiceService
+- - [x] findAll() - (30mins)
+- - [x] findByID() - (30mins)
+- - [x] Add() - (30mins)
+- - [x] Delete() - (30mins)
+- - [x] Update() - (30mins)
+- - [x] Test methods - 2 hours
+- [x] Result
+- [x] ResultType
+# Models - 50 Mins
+- [x] Employee - (10 mins)
+- [x] Customer - (10 mins)
+- [x] Appointment- (10 mins)
+- [x] Services - (10 mins)
+- [x] AppUser - (10 mins)
+# Security 4 Hours
+- [ ] AppUserService (1 hour)
+- [ ] JwtConverter (1 hour)
+- [ ] JwtRequestFilter (1 hour)
+- [ ] SecurityConfig (1 hour)
+
+---
+# Components
+- [ ] **Home Component**  - 2 hrs
+- Render general information
+- [ ] **Navigation** - 11 hrs
+- - [ ] Login Link ->(Login Component) - 2 hr
+- - [ ] Logout Button - 1 hr
+- - [ ] (Customer) Book Appointment Link ->(View Employees Component) - 2 hr
+- - [ ] (Customer) View Appointments Link ->(View Customer Appointments Component) - 2 hr
+- - [ ] Home Link ->(Home Component) - 30 mins
+- - [ ] (Employee) Availability Link ->(Add Availability Component) - 1 hr
+- - [ ] (Employee) View Appointment Link ->(View Employee Appointments Component) - 1 hr
+- - [ ] (Admin) Employees Link ->(Employee List Component) - 1 hr
+- - [ ] (Admin) Services Link ->(Service List Component) - 1 hr
+- [ ] **Login** - 6.5 hrs
+- - [ ] Renders login form - 3 hrs
+- - [ ] Submit Button ->(Home Component) - 3 hrs
+- - [ ] Cancel Button - 30 mins
+- [ ] **SignUp**  - 6.5 hrs
+- - [ ] Renders sign up form - 3 hrs
+- - [ ] Submit Button ->(Login Component) - 3 hrs
+- - [ ] Cancel Button - 30 mins
+- [ ] **Success** - 0.5 hrs
+- - [ ] Renders success message - 30 mins
+- [ ] **(Customer) View Employees** - 4 hrs
+- - [ ] Renders bootstrap cards of employees with image and description as links - 4 hrs
+- [ ] **(Customer) View Employee Schedule** - 7.5 hrs
+- - [ ] Renders a list of available appointments for employees - 4 hrs
+- - [ ] Dropdown with a selection of services - 1 hr
+- - [ ] Renders a book button ->(Add Appointment Component) - 2 hrs
+- - [ ] Renders a back button - 30 mins
+- [ ] **(Customer) Add Appointment** - 7 hrs
+- - [ ] Renders updated list of available appointments for the employee - 2 hrs
+- - [ ] (Customer) Delete Appointment - 3 hrs
+- - [ ] Renders updated list of available appointments - 2 hrs
+- [ ] **(Customer) View Customer Appointments** - 2 hrs
+- - [ ] Delete Button ->(Delete Appointment Component) - 1 hr
+- - [ ] Renders appointments scheduled for that customer - 1 hr
+- [ ] **(Employee) View Employee Appointments** - 4 hrs
+- - [ ] Render appointments scheduled for that employee - 2 hrs
+- - [ ] Delete Button ->(Delete Availability Component) - 2 hrs
+- [ ] **(Employee) Add Availability** - 2 hrs
+- - [ ] Render Create Availability form 
+- [ ] **(Employee) Delete Availability** - 2 hrs
+- - [ ] Render updated list of appointments 
+- [ ] **(Admin) Employee List** - 7 hrs
+- - [ ] Renders a list of employees - 3 hrs
+- - [ ] Renders edit buttons for all employees ->(Update Employee Component) - 2 hrs
+- - [ ] Renders a delete button for all employees ->(Delete Employee Component) - 2 hrs
+- [ ] **Service List** - 6 hrs
+- - [ ] Renders a list of services - 2 hrs
+- - [ ] Renders edit buttons for all services ->(Update Service Component) - 2 hrs
+- - [ ] Renders a delete button for all services ->(Delete Service Component) - 2 hrs
+- [ ] **Create Service**
+- - [ ] Renders Service form to add service - 1 hr
+- [ ] **Create Employee**
+- - [ ] Renders Employee form  to add employee - 1 hr
+- [ ] **Update Employee**
+- - [ ] Renders Employee form with existing information for selected employee - 1hr
+- [ ] **Update Service**
+- - [ ] Renders Service form with existing information for selected service - 1 hr
+- [ ] **Delete Employee**
+- - [ ] Renders a confirmation message for deletion - 1 hr
+- [ ] **Delete Service**
+- - [ ] Renders a confirmation message for deletion - 1 hr
+- [ ] **Not Found**
+- - [ ] Renders a 404 not found Gif - 1 hr
+- [ ] **Employee Form**
+- - [ ] Form with fields based on employee model - 1 hr
+- [ ] **Service form**
+- - [ ] Form with fields based on service model - 1 hr
+- # App - 4 hrs
+- [ ] Import Components -  2 hrs
+- [ ] Set up Router, Switch, & Route paths - 2 hrs
+
