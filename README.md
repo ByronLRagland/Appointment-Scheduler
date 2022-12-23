@@ -10,3 +10,9 @@ The Appointment Scheduler application is a customizable platform that allows a b
 
 
 # Demo
+
+## Part 1 (Admin & Employee Views)
+https://user-images.githubusercontent.com/80864400/209413823-aec04251-8b86-4bc5-bc5c-e4022684f55d.mp4
+## Part 2 (Customer View)
+https://user-images.githubusercontent.com/80864400/209413831-9a84c8c6-98bd-4933-b60b-e12c27179215.mp4
+
